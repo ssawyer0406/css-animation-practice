@@ -1,0 +1,46 @@
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.box:hover {
+  border: 2px solid white;
+  transition: border 0.5s;
+}
+
+.box--top-left {
+  background-color: lightcoral;
+  top: 0;
+  left: 0;
+  animation: main--top-left 4s forwards;
+}
+
+.box--top-right {
+  background-color: lightblue;
+  top: 0;
+  right: 0;
+  animation: main--top-right 4s forwards;
+}
+
+.box--bottom-right {
+  background-color: lightgreen;
+  bottom: 0;
+  right: 0;
+  animation: main--bottom-right 4s forwards;
+}
+.box--bottom-left {
+  background-color: lightgoldenrodyellow;
+  bottom: 0;
+  left: 0;
+  animation: main--bottom-left 4s forwards;
+}
+
+@keyframes main--top-left {
+  to {
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100px 0;
+    background-color: black;
+  }
+}
